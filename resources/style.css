@@ -1,0 +1,36 @@
+window {
+    background-color: #f4f6f9;
+}
+
+entry {
+    font-size: 15px;
+    padding: 8px;
+}
+
+button {
+    background: #2d89ef;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 6px 10px;
+}
+
+#error_label {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+#success_label {
+    color: #27ae60;
+    font-weight: bold;
+}
+/* Exit button - red */
+#exit_button {
+    background: #e74c3c;
+    color: white;
+    font-weight: bold;
+}
+
+#exit_button:hover {
+    background: #c0392b;
+}

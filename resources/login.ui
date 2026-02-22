@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+
+  <object class="GtkWindow" id="main_window">
+    <property name="title">Secure Login @tecqmate</property>
+    <property name="default_width">420</property>
+    <property name="default_height">320</property>
+    <property name="resizable">False</property>
+    <property name="deletable">False</property>
+
+    <child>
+      <object class="GtkBox" id="main_box">
+        <property name="orientation">vertical</property>
+        <property name="spacing">15</property>
+        <property name="margin_top">30</property>
+        <property name="margin_bottom">30</property>
+        <property name="margin_start">40</property>
+        <property name="margin_end">40</property>
+
+        <!-- Title -->
+        <child>
+          <object class="GtkLabel" id="lbl_title">
+            <property name="label">User Login</property>
+            <property name="halign">center</property>
+            <attributes>
+              <attribute name="weight" value="bold"/>
+              <attribute name="scale" value="1.5"/>
+            </attributes>
+          </object>
+        </child>
+
+        <!-- Username -->
+        <child>
+          <object class="GtkEntry" id="entry_username">
+            <property name="placeholder_text">Username</property>
+          </object>
+        </child>
+
+        <!-- Password -->
+        <child>
+          <object class="GtkEntry" id="entry_password">
+            <property name="placeholder_text">Password</property>
+            <property name="visibility">False</property>
+            <property name="input_purpose">password</property>
+          </object>
+        </child>
+
+        <!-- Status -->
+        <child>
+          <object class="GtkLabel" id="lbl_status">
+            <property name="label"></property>
+            <property name="halign">center</property>
+          </object>
+        </child>
+
+        <!-- Buttons Row -->
+        <child>
+          <object class="GtkBox">
+            <property name="orientation">horizontal</property>
+            <property name="spacing">15</property>
+            <property name="halign">center</property>
+
+            <child>
+              <object class="GtkButton" id="btn_exit">
+                <property name="label">Exit</property>
+                <property name="name">exit_button</property>
+              </object>
+            </child>
+
+            <child>
+              <object class="GtkButton" id="btn_login">
+                <property name="label">Login</property>
+              </object>
+            </child>
+
+
+          </object>
+        </child>
+
+      </object>
+    </child>
+  </object>
+</interface>
